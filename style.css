@@ -745,3 +745,393 @@ footer {
   color: #b5c7f7;
   margin-top: 1em;
 }
+.socials a {
+    margin: 0 10px;
+    color: #333;
+    font-size: 1.5em;
+    transition: color 0.2s;
+    text-decoration: none;
+}
+.socials a:hover {
+    color: #0077b5; /* LinkedIn blue or your theme color */
+}
+.socials {
+  display: flex;
+  gap: 20px; /* spacing between icons */
+  align-items: center;
+}
+
+.socials a {
+  color: #333;
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  transition: color 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+  text-decoration: none;
+  position: relative;
+}
+
+.socials a:hover,
+.socials a:focus {
+  color: #0077b5; /* LinkedIn blue as example */
+  background-color: #e0f0ff;
+  transform: scale(1.1);
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 119, 181, 0.6);
+}
+
+/* Optional: Different hover colors per icon */
+.socials a[aria-label*="Email"]:hover {
+  color: #d44638; /* Gmail red */
+  background-color: #fdecea;
+  box-shadow: 0 0 8px rgba(212, 70, 56, 0.6);
+}
+
+.socials a[aria-label*="GitHub"]:hover {
+  color: #333;
+  background-color: #f0f0f0;
+  box-shadow: 0 0 8px rgba(51, 51, 51, 0.4);
+}
+
+/* For keyboard accessibility */
+.socials a:focus-visible {
+  outline: 2px solid #0077b5;
+  outline-offset: 2px;
+}
+
+/* Button styling for Download Resume */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0.6em 1.2em;
+  background-color: #0077b5;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #005f8d;
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 95, 141, 0.7);
+}
+
+/* Optional: Add download icon inside button */
+.btn::before {
+  content: "\f019"; /* Font Awesome download icon unicode */
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  margin-right: 6px;
+}
+.skills-circles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 32px;
+  justify-items: center;
+}
+.progress-text {
+  color: #fff;
+  text-shadow: 0 0 6px #0077ff, 0 0 2px #000;
+  font-weight: bold;
+}
+.bar {
+  stroke: #0077ff;
+  stroke-width: 6;
+  stroke-dasharray: 264;
+  stroke-dashoffset: 264;
+  transition: stroke-dashoffset 1s ease;
+}
+.skill-circle-card:hover {
+  box-shadow: 0 6px 24px rgba(0, 119, 255, 0.15);
+  transform: translateY(-6px) scale(1.03);
+  transition: all 0.3s;
+}
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+&:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}.skill-circle-card {
+  padding: 20px;
+  border-radius: 20px;
+  color: white;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-circle-card {
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+.skills-section {
+  padding: 60px 20px;
+  background: #1a1e3a; /* matches your theme */
+  text-align: center;
+  border-radius: 20px;
+  margin: 40px 0;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #3390ff;
+  margin-bottom: 40px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 30px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.skill-card {
+  background: #f9f9f9;
+  border-radius: 15px;
+  padding: 20px 10px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.skill-card img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.skill-card p {
+  font-weight: 600;
+  margin: 0;
+  color: #1a1a1a;
+}
+
+.skill-card:hover {
+  transform: scale(1.05);
+}
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+* {
+  box-sizing: border-box;
+}
+/* Make section full height and center its content */
+.center-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* full viewport height */
+  background-color: #1e1e3f; /* match your background */
+}
+
+/* Container to limit width and align text */
+.center-container {
+  max-width: 900px;
+  width: 100%;
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #2b2b5f; /* optional background */
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Title styling */
+.section-title {
+  font-size: 2.2rem;
+  color: #4a90e2;
+  margin-bottom: 30px;
+}
+
+/* Grid of skills */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* Skill card design */
+.skill-card {
+  background-color: #fff;
+  padding: 20px;
+  width: 120px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.skill-card:hover {
+  transform: scale(1.05);
+}
+
+.skill-card img {
+  width: 50px;
+  height: 50px;
+}
+
+.skill-card p {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #000;
+}
+.center-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #1e1e3f; /* same as your other sections */
+  padding: 60px 20px;
+}
+
+.center-container {
+  max-width: 900px;
+  width: 100%;
+  text-align: center;
+  background-color: #2b2b5f; /* optional background for contrast */
+  border-radius: 15px;
+  padding: 40px 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #4a90e2;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+.section-title span {
+  font-size: 1.5rem;
+  vertical-align: middle;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.skill-card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  width: 120px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+}
+
+.skill-card img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.skill-card p {
+  margin-top: 12px;
+  font-weight: 600;
+  color: #000;
+}
+.projects-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 20px;
+  background: linear-gradient(90deg, #1d2233, #2e3450);
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #788bff;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.project-card {
+  background-color: #3d425c;
+  padding: 20px;
+  border-radius: 16px;
+  width: 300px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.3);
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.project-card h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #f0f0f0;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 0.95rem;
+  color: #ccc;
+  margin-bottom: 10px;
+}
+
+.project-link {
+  display: inline-block;
+  color: #4a90e2;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .projects-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-card {
+    width: 90%;
+  }
+}
