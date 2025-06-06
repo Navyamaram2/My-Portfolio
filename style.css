@@ -1135,3 +1135,165 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
     width: 90%;
   }
 }
+/* =========================
+   Responsive Enhancements
+   ========================= */
+
+/* Responsive Navigation: Hamburger menu */
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  color: var(--primary, #5f6fff);
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  nav {
+    padding: 1rem 1rem;
+  }
+}
+
+@media (max-width: 700px) {
+  nav {
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+  }
+  .menu-toggle {
+    display: block;
+    margin-left: auto;
+    z-index: 1500;
+  }
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background: var(--glass-bg, #23244aee);
+    position: absolute;
+    top: 60px;
+    right: 1rem;
+    width: 180px;
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+    z-index: 1000;
+    padding: 1rem 0;
+    gap: 0;
+    border: 1.5px solid var(--glass-border);
+    backdrop-filter: blur(12px);
+    animation: fadeIn 0.3s;
+  }
+  nav ul.nav-open {
+    display: flex;
+  }
+  nav ul li {
+    margin: 0;
+    text-align: right;
+    padding: 0.7rem 1.2rem;
+  }
+}
+
+/* Responsive Header */
+@media (max-width: 900px) {
+  .header-flex {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  .profile-photo {
+    width: 120px;
+    height: 120px;
+  }
+  .header-content {
+    text-align: center;
+    max-width: 100%;
+  }
+}
+
+/* Responsive Sections and Cards */
+@media (max-width: 900px) {
+  section, .objective-card {
+    padding: 2rem 0.5rem;
+    max-width: 99vw;
+    margin: 1.5rem 0.5rem;
+    border-radius: 14px;
+  }
+  .objective-card {
+    padding: 1.4em 0.7em;
+  }
+}
+
+/* Responsive Timeline */
+@media (max-width: 700px) {
+  .timeline {
+    margin-left: 0.5rem;
+    padding-left: 1rem;
+    border-left-width: 2px;
+  }
+}
+
+/* Responsive Skills & Projects Grids */
+@media (max-width: 900px) {
+  .skills-list,
+  .projects-list,
+  .projects-gallery {
+    flex-direction: column !important;
+    gap: 1.2rem !important;
+    align-items: center !important;
+  }
+  .skill-card,
+  .project-card {
+    width: 95vw !important;
+    max-width: 340px !important;
+    min-width: unset !important;
+  }
+  .project-image {
+    height: 120px !important;
+  }
+}
+
+/* Responsive Contact Section */
+@media (max-width: 900px) {
+  .contact-flex {
+    flex-direction: column;
+    gap: 1.2rem;
+    align-items: stretch;
+  }
+  .contact-form, .contact-details {
+    max-width: 100%;
+    width: 100%;
+    padding: 1rem 0.5rem;
+  }
+}
+
+/* Responsive Typography and Buttons */
+@media (max-width: 500px) {
+  h1, h2 {
+    font-size: 1.2rem !important;
+  }
+  .header-content h1 {
+    font-size: 1.3rem !important;
+  }
+  .btn, .header-content .btn, .contact-form .btn {
+    font-size: 1rem !important;
+    padding: 0.6rem 1.2rem !important;
+  }
+  .profile-photo {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+/* Make images and inputs always fit */
+img, .profile-photo, .project-image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+input, textarea, button {
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
