@@ -195,11 +195,13 @@
         &copy; 2025 Navya Maram. All rights reserved.
     </footer>
 
-    <script>
-    // Hamburger menu functionality
-    document.getElementById('menuToggle').onclick = function() {
-        document.querySelector('nav ul').classList.toggle('nav-open');
-    };
-    </script>
+      <script>
+    // Hamburger menu toggle
+    const menuToggle = document.getElementById('menu-toggle');
+    const navList = document.getElementById('nav-list');
+    menuToggle.addEventListener('click', () => {
+      navList.classList.toggle('active');
+    });
+  </script>
 </body>
 </html>
