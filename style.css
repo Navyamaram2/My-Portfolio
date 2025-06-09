@@ -1295,5 +1295,56 @@ input, textarea, button {
   width: 100%;
   box-sizing: border-box;
 }
+@media (max-width: 768px) {
+  nav {
+    padding: 1rem;
+  }
+  nav ul {
+    flex-direction: column;
+    background: #222;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 180px;
+    display: none;
+    gap: 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    border-radius: 0 0 8px 8px;
+    z-index: 100;
+  }
+  nav ul.active {
+    display: flex;
+  }
+  nav ul li {
+    padding: 1rem;
+    border-bottom: 1px solid #333;
+  }
+  .menu-toggle {
+    display: block;
+    color: #fff;
+  }
+  .header-content h1 {
+    font-size: 1.5rem;
+  }
+  .profile-photo {
+    width: 100px;
+    height: 100px;
+  }
+  main {
+    padding: 0 0.5rem;
+  }
+  .card {
+    padding: 1rem;
+  }
+}
+@media (max-width: 480px) {
+  .header-content h1 {
+    font-size: 1.1rem;
+  }
+  .card {
+    padding: 0.7rem;
+  }
+}
+
 
 
