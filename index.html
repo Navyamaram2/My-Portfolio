@@ -3,72 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NAVYA MARAM | Portfolio</title>
+    <title>MARAM NAVYA | Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 <body>
     <nav>
-        <div class="logo">NAVYA MARAM</div>
-        <div class="menu-toggle" id="menuToggle">
+        <div class="logo">MARAM NAVYA</div>
+        <div class="menu-toggle" id="menu-toggle">
             <i class="fas fa-bars"></i>
         </div>
-        <ul>
+        <ul id="nav-list">
             <li><a href="#about">About</a></li>
             <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
-    <header>
-        <div class="header-flex">
-            <img src="navya.jpeg" alt="Navya Maram Photo" class="profile-photo">
-            <div class="header-content">
-                <h1>Hello, I'm <span class="highlight">NAVYA MARAM</span></h1>
-                <p class="subtitle">
-                    <strong>Passionate Computer Science Student & Emerging Developer</strong><br>
-                    I love creating innovative web applications and solving real-world challenges with code.<br>
-                    Quick to learn, eager to collaborate, and always driven by curiosity and impact.
-                </p>
-                <div class="socials" role="navigation" aria-label="Social media and contact links">
-                    <a href="mailto:navyamaram0227@gmail.com" aria-label="Send Email to Navya Maram" title="Email">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/navya-maram-b429912ba" target="_blank" aria-label="LinkedIn Profile" title="LinkedIn">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="https://github.com/Navyamaram2" target="_blank" aria-label="GitHub Profile" title="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </div>
-                <a href="MARAMNAVYA-RESUME.pdf" class="btn" download aria-label="Download Resume">
-                    Download Resume
-                </a>
-            </div>
-        </div>
-    </header>
+  <header class="section-animated home-header">
+  <div class="header-flex">
+    <img src="navya photo.jpg" alt="Navya Maram Photo" class="profile-photo rounded-shadow" />
+    <div class="header-content">
+      <h1>Hi, I'm <span class="highlight">Maram Navya</span></h1>
+      <p class="subtitle tagline">
+        I'm a Computer Science student passionate about AI and web development.<br>
+        I build innovative solutions to real-world problems and thrive in collaborative environments.
+      </p>
 
-    <section id="about">
-        <div class="objective-card">
-            <div class="objective-header">
-                <span class="objective-icon">🎯</span>
-                <h2>Objective</h2>
-            </div>
-            <ul class="objective-list">
-                <li><strong>Resourceful & results-oriented:</strong> Strong foundation in programming and web development.</li>
-                <li><strong>Fast learner:</strong> Quick to master new technologies and apply creative solutions.</li>
-                <li><strong>Team player:</strong> Known for collaboration, clear communication, and a growth mindset.</li>
-                <li><strong>Driven by impact:</strong> Eager to deliver meaningful results and contribute fresh ideas.</li>
-            </ul>
-            <p class="objective-tagline">
-                <em>“I love turning challenges into opportunities for innovation.”</em>
-            </p>
-        </div>
-    </section>
+      <div class="socials" role="navigation" aria-label="Social media and contact links">
+        <a href="mailto:navyamaram0227@gmail.com" aria-label="Email" title="Email" tabindex="0">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/navya-maram-b429912ba" target="_blank" aria-label="LinkedIn" title="LinkedIn" tabindex="0">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/Navyamaram2" target="_blank" aria-label="GitHub" title="GitHub" tabindex="0">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
 
-    <section id="education">
+      <a href="MARAMNAVYA-RES_IMG.pdf" class="btn btn-primary" download aria-label="Download Resume" tabindex="0">
+        Download Resume
+      </a>
+    </div>
+  </div>
+</header>
+
+
+
+   <section id="about" class="section-animated about-section">
+  <h2>About Me</h2>
+  <p>
+    I am a driven Computer Science student specializing in Artificial Intelligence and web technologies. Always eager to learn and innovate, I enjoy solving complex problems through code and collaboration.
+  </p>
+  <p>
+    With experience in Python, Java, and cloud platforms, I aim to build impactful applications that improve user experience and create meaningful solutions.
+  </p>
+  <p class="inspirational-quote">
+    <em>“Turning challenges into opportunities is my core motivation.”</em>
+  </p>
+</section>
+
+
+    <section id="education" class="section-animated">
         <h2>Education</h2>
         <div class="timeline">
             <div class="timeline-item">
@@ -89,138 +90,169 @@
         </div>
     </section>
 
-    <section id="skills" class="center-section">
+    <!-- EXPERIENCE SECTION: Add after Education -->
+    <section id="experience" class="section-animated">
+      <h2>Professional Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>Generative AI Intern</h3>
+          <span>SmartBridge with APSCHE & IBM Cloud | May 2025 – Jul 2025</span>
+          <p>Developed and deployed HealthAI healthcare assistant using IBM Watson and IBM Cloud. Delivered scalable solutions focused on AI-powered symptom chat and disease prediction.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>Artificial Intelligence Intern</h3>
+          <span>SmartBridge & APSCHE | Jul 2024</span>
+          <p>Built machine learning projects and completed AI analytics certification using IBM Watson tools.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>Full Stack Developer (Virtual Intern)</h3>
+          <span>AICTE EduSkills | Dec 2024</span>
+          <p>Implemented web modules and APIs in Java and Spring Boot for dynamic project delivery.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="center-section section-animated">
         <div class="center-container">
             <h2 class="section-title">My Skills </h2>
             <div class="skills-grid">
                 <div class="skill-card">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
                     <p>Python</p>
+                    <div class="skill-level"><div class="skill-level-fill" data-level="95%"></div></div>
+                    <span class="skill-counter" data-count="95">0</span>
                 </div>
                 <div class="skill-card">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
                     <p>Java</p>
+                    <div class="skill-level"><div class="skill-level-fill" data-level="90%"></div></div>
+                    <span class="skill-counter" data-count="90">0</span>
                 </div>
                 <div class="skill-card">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
                     <p>HTML</p>
+                    <div class="skill-level"><div class="skill-level-fill" data-level="90%"></div></div>
+                    <span class="skill-counter" data-count="90">0</span>
                 </div>
                 <div class="skill-card">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
                     <p>CSS</p>
+                    <div class="skill-level"><div class="skill-level-fill" data-level="88%"></div></div>
+                    <span class="skill-counter" data-count="88">0</span>
                 </div>
                 <div class="skill-card">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
                     <p>JavaScript</p>
+                    <div class="skill-level"><div class="skill-level-fill" data-level="84%"></div></div>
+                    <span class="skill-counter" data-count="84">0</span>
                 </div>
                 <div class="skill-card">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
                     <p>MySQL</p>
+                    <div class="skill-level"><div class="skill-level-fill" data-level="80%"></div></div>
+                    <span class="skill-counter" data-count="80">0</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="projects">
-    <h2>Projects</h2>
-    <div class="projects-gallery">
-        <!-- Project 1 -->
-        <a href="https://github.com/Navyamaram2/Spotify-GestureControl" target="_blank" class="project-card">
-            <div class="project-image">
-                <img src="spotify_gesture.jpg" alt="Spotify Gesture Control Application">
-            </div>
-            <div class="project-info">
-                <h3>Spotify Gesture Control</h3>
-                <p>Real-time hand gesture control for Spotify playback using MediaPipe, OpenCV, and voice feedback with threading and Spotify API integration.</p>
-            </div>
-        </a>
-        <!-- Project 2 -->
-        <a href="https://github.com/Navyamaram2/HealthAI-Intelligent-Healthcare-Assistant-Using-IBM-Granite-" target="_blank" class="project-card">
-            <div class="project-image">
-                <img src="healthai.jpg" alt="HealthAI - Intelligent Healthcare Assistant">
-            </div>
-            <div class="project-info">
-                <h3>HealthAI - Intelligent Healthcare Assistant</h3>
-                <p>AI-powered healthcare assistant using IBM Watson and Granite 13B for symptom queries and diagnosis support.</p>
-            </div>
-        </a>
-        <!-- Project 3 -->
-        <a href="https://github.com/Navyamaram2/Mental_Health_Trends-Survey" target="_blank" class="project-card">
-            <div class="project-image">
-                <img src="mentalhealth.jpg" alt="Mining the Mind Project">
-            </div>
-            <div class="project-info">
-                <h3>Mining the Mind</h3>
-                <p>Data mining and OLAP system analyzing mental health trends using MDX queries and data visualization.</p>
-            </div>
-        </a>
-        <!-- Project 4 -->
-        <a href="https://github.com/Navyamaram2/Mobile_Lifespan_prediction-navya" target="_blank" class="project-card">
-            <div class="project-image">
-                <img src="lifespan.jpg" alt="Mobile Phone Lifespan Prediction Application">
-            </div>
-            <div class="project-info">
-                <h3>Mobile Phone Lifespan Prediction</h3>
-                <p>ML regression model (Random Forest) predicts mobile phone lifespan with user-friendly desktop UI.</p>
-            </div>
-        </a>
-        <!-- Project 5 -->
-        <a href="https://github.com/Navyamaram2/My-Portfolio" target="_blank" class="project-card">
-            <div class="project-image">
-                <img src="portfolioimg.png" alt="Navya Maram Portfolio Website">
-            </div>
-            <div class="project-info">
-                <h3>Personal Portfolio Website</h3>
-                <p>Responsive portfolio website built with HTML, CSS, and JavaScript showcasing projects, skills, and achievements.</p>
-            </div>
-        </a>
-        <!-- Project 6 -->
-        <a href="https://github.com/Navyamaram2/Python-MiniProjects" target="_blank" class="project-card">
-            <div class="project-image">
-                <img src="python_miniprojects.jpg" alt="Python Mini Projects Repository">
-            </div>
-            <div class="project-info">
-                <h3>Python Mini Projects Repo</h3>
-                <p>Collection of small Python projects demonstrating GUI, file handling, and algorithm implementations.</p>
-            </div>
-        </a>
-        <!-- Project 7 -->
-        <a href="https://github.com/Navyamaram2/JavaScript-MiniProjects" target="_blank" class="project-card">
-            <div class="project-image">
-                <img src="javascript_miniprojects.jpg" alt="JavaScript Mini Projects Repository">
-            </div>
-            <div class="project-info">
-                <h3>JavaScript Mini Projects Repo</h3>
-                <p>Various JavaScript projects covering DOM manipulation, events, and basic front-end concepts.</p>
-            </div>
-        </a>
-        <!-- Project 8 -->
-        <a href="https://github.com/Navyamaram2/JAVA-MiniProjects" target="_blank" class="project-card">
-            <div class="project-image">
-                <img src="java_miniprojects.jpg" alt="Java Mini Projects Repository">
-            </div>
-            <div class="project-info">
-                <h3>Java Mini Projects Repo</h3>
-                <p>Collection of beginner Java projects demonstrating OOP concepts, GUI with Swing, and basic algorithms.</p>
-            </div>
-        </a>
-    </div>
+    <section id="projects" class="section-animated">
+  <h2>Projects</h2>
+  <div class="projects-gallery">
+    <!-- Project 1 -->
+    <a href="https://github.com/Navyamaram2/Spotify-GestureControl" target="_blank" class="project-card">
+      <div class="project-image">
+        <img src="spotify_gesture.jpg" alt="Spotify Gesture Control Application">
+      </div>
+      <div class="project-info">
+        <h3>Spotify Gesture Control</h3>
+        <p>Real-time hand gesture control for Spotify playback using MediaPipe, OpenCV, Spotipy API and pyttsx3 for authentication and voice feedback.</p>
+      </div>
+    </a>
+    <!-- Project 2 -->
+    <a href="https://github.com/Navyamaram2/HealthAI-Intelligent-Healthcare-Assistant-Using-IBM-Granite-" target="_blank" class="project-card">
+      <div class="project-image">
+        <img src="healthai.jpg" alt="HealthAI - Intelligent Healthcare Assistant">
+      </div>
+      <div class="project-info">
+        <h3>HealthAI - Intelligent Healthcare Assistant</h3>
+        <p>AI-powered healthcare assistant with IBM Watson and Granite 13B for symptom chat and prediction, with >95% accuracy.</p>
+      </div>
+    </a>
+    <!-- Project 3 -->
+    <a href="https://github.com/Navyamaram2/Mental_Health_Trends-Survey" target="_blank" class="project-card">
+      <div class="project-image">
+        <img src="mentalhealth.jpg" alt="Mining the Mind Project">
+      </div>
+      <div class="project-info">
+        <h3>Mining the Mind</h3>
+        <p>OLAP-based SQL dashboards analyzing workplace mental health with Decision Trees for 97% accuracy.</p>
+      </div>
+    </a>
+    <!-- Project 4 -->
+    <a href="https://github.com/Navyamaram2/Mobile_Lifespan_prediction-navya" target="_blank" class="project-card">
+      <div class="project-image">
+        <img src="lifespan.jpg" alt="Mobile Phone Lifespan Prediction Application">
+      </div>
+      <div class="project-info">
+        <h3>Mobile Phone Lifespan Prediction</h3>
+        <p>Desktop ML app using Random Forest regression for accurate phone longevity predictions.</p>
+      </div>
+    </a>
+    <!-- Project 5 -->
+    <a href="https://github.com/Navyamaram2/My-Portfolio" target="_blank" class="project-card">
+      <div class="project-image">
+        <img src="portfolioimg.png" alt="Navya Maram Portfolio Website">
+      </div>
+      <div class="project-info">
+        <h3>Personal Portfolio Website</h3>
+        <p>Responsive HTML/CSS/JS-based web portfolio showcasing full projects, skills, live links, and achievements.</p>
+      </div>
+    </a>
+    <!-- Project 6 -->
+    <a href="https://github.com/Navyamaram2/Python-MiniProjects" target="_blank" class="project-card">
+      <div class="project-image">
+        <img src="python_miniprojects.jpg" alt="Python Mini Projects Repository">
+      </div>
+      <div class="project-info">
+        <h3>Python Mini Projects Repo</h3>
+        <p>Collection of small Python apps demonstrating GUI design, file handling, and algorithms.</p>
+      </div>
+    </a>
+    <!-- Project 7 -->
+    <a href="https://github.com/Navyamaram2/JavaScript-MiniProjects" target="_blank" class="project-card">
+      <div class="project-image">
+        <img src="javascript_miniprojects.jpg" alt="JavaScript Mini Projects Repository">
+      </div>
+      <div class="project-info">
+        <h3>JavaScript Mini Projects Repo</h3>
+        <p>JavaScript projects covering DOM, events, and interactive front-end features.</p>
+      </div>
+    </a>
+    <!-- Project 8 -->
+    <a href="https://github.com/Navyamaram2/JAVA-MiniProjects" target="_blank" class="project-card">
+      <div class="project-image">
+        <img src="java_miniprojects.jpg" alt="Java Mini Projects Repository">
+      </div>
+      <div class="project-info">
+        <h3>Java Mini Projects Repo</h3>
+        <p>Beginner Java projects demonstrating OOP, GUI (Swing), and core algorithms.</p>
+      </div>
+    </a>
+  </div>
 </section>
 
 
-    <section id="contact">
+    <section id="contact" class="section-animated">
         <h2>Contact</h2>
         <div class="contact-flex">
             <form id="contactForm" class="contact-form" novalidate>
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" placeholder="Your name" required>
-
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" placeholder="Your email" required>
-
                 <label for="message">Message</label>
                 <textarea id="message" name="message" placeholder="Your message" rows="5" required></textarea>
-
                 <button type="submit" class="btn">Send Message</button>
             </form>
             <div class="contact-details animated-contact-info">
@@ -246,13 +278,78 @@
         &copy; 2025 Navya Maram. All rights reserved.
     </footer>
 
-      <script>
+    <script>
     // Hamburger menu toggle
     const menuToggle = document.getElementById('menu-toggle');
     const navList = document.getElementById('nav-list');
-    menuToggle.addEventListener('click', () => {
-      navList.classList.toggle('active');
+    if(menuToggle && navList){
+        menuToggle.addEventListener('click', () => {
+            navList.classList.toggle('active');
+        });
+    }
+
+    // Animate sections on scroll
+    document.querySelectorAll('section, header').forEach(section => {
+      section.classList.add('section-animated');
     });
-  </script>
+    const sectionObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.3 });
+    document.querySelectorAll('.section-animated').forEach(sec => sectionObserver.observe(sec));
+
+    // Animate skill counters and bars
+    const skillsSection = document.getElementById('skills');
+    if (skillsSection) {
+      const observer = new IntersectionObserver(entries => {
+        if (entries[0].isIntersecting) {
+          document.querySelectorAll('.skill-level-fill').forEach(bar => {
+            bar.style.width = bar.dataset.level || '100%';
+          });
+          document.querySelectorAll('.skill-counter').forEach(counter => {
+            let target = +counter.getAttribute('data-count');
+            let count = 0;
+            counter.textContent = "0";
+            let increment = Math.ceil(target / 30);
+            function updateCounter() {
+              if (count < target) {
+                count += increment;
+                if (count > target) count = target;
+                counter.textContent = count + "%";
+                requestAnimationFrame(updateCounter);
+              } else {
+                counter.textContent = target + "%";
+              }
+            }
+            updateCounter();
+          });
+          observer.disconnect();
+        }
+      }, { threshold: 0.3 });
+      observer.observe(skillsSection);
+    }
+
+    // Contact form validation & highlight
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+      contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const name = contactForm.name.value.trim();
+        const email = contactForm.email.value.trim();
+        const message = contactForm.message.value.trim();
+        if (!name || !email || !message) {
+          alert('Please fill out all fields.');
+          return;
+        }
+        alert('Thank you for reaching out! I will get back to you soon.');
+        contactForm.reset();
+      });
+      contactForm.querySelectorAll('input, textarea').forEach(input => {
+        input.addEventListener('focus', () => input.classList.add('input-focus'));
+        input.addEventListener('blur', () => input.classList.remove('input-focus'));
+      });
+    }
+    </script>
 </body>
 </html>
